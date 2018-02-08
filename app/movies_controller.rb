@@ -24,8 +24,10 @@ def can_be_created_with_a_hash_of_attributes
 end
 
 def can_be_created_in_a_block
-  Movie.create do |m|
-    __
+  Movie.create do |movie|
+    movie.title = "Home Alone"
+    movie.release_date = 1990
+    
   end
 end
 
